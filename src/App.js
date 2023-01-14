@@ -5,9 +5,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <h1 className='text-blue-600 italic'>John Jamison</h1>
-          <h1 className='text-blue-600 italic'>Big Stinky Full Stack Dev</h1>
-          <h3 className='text-blue-600 italic'>Simple Realty Bits</h3>
+          <h1 className='font-bold text-2xl'>John Jamison</h1>
+          <p className="text-center italic text-base mt-2">@iamjohnjamison</p>
+          <p className='mt-2 text-base'>Software dev passionate about startups, business, software</p>
+        </div>
+        <div className='flex space-x-4 mt-4'>
+          <img className='h-8 w-8' src='/tiktok-icon.png'/>
+          <img className='h-8 w-8' src='/linkedin.png'/>
+          <img className='h-8 w-8' src='/instagram.png'/>
+        </div>
+        <div className='bg-white w-full space-y-4'>
+          <p>yaaaa</p>
         </div>
       </header>
     </div>
