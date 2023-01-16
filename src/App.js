@@ -14,9 +14,6 @@ function App() {
           <img className='h-8 w-8' src='/linkedin.png'/>
           <img className='h-8 w-8' src='/instagram.png'/>
         </div>
-        <div className='bg-white w-full space-y-4'>
-          <p>yaaaa</p>
-        </div>
       </header>
     </div>
   );
