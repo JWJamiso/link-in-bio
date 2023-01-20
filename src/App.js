@@ -1,4 +1,3 @@
-import "./App.css";
 
 function LinkTile({link, title}) {
   return (
@@ -16,14 +15,14 @@ function LinkTile({link, title}) {
 
 function App() {
   return (
-    <div className="">
+    <div className="mx-auto max-w-2xl w-full p-8 ">
         <div className="flex flex-col items-center space-y-4 pt-12">
           <div>
             <img className="w-28 h-28 rounded-full" src="https://pbs.twimg.com/profile_images/1588707853275058176/vxVWhLC2_400x400.jpg"></img>
           </div>
-          <div className="text-black">
+          <div className="text-black text-center">
             <h1 className="font-bold text-2xl ">John Jamison</h1>
-            <p className="text-center text-lg font-bold italic mt-2">@iamjohnjamison</p>
+            <p className="text-lg font-bold italic mt-2">@iamjohnjamison</p>
             <p className="mt-2 text-base text-white">
               Software dev passionate about startups, business, software
             </p>
@@ -36,7 +35,9 @@ function App() {
           </div>
           <div className="w-full space-y-4 mt-4 mx-auto px-2">
             <LinkTile link="https://pcpartpicker.com/b/w38J7P" title="My PC Build In Depth"></LinkTile>
-
+            <LinkTile link="https://pcpartpicker.com/b/w38J7P" title="My PC Build In Depth"></LinkTile>
+            <LinkTile link="https://pcpartpicker.com/b/w38J7P" title="My PC Build In Depth"></LinkTile>
+            <LinkTile link="https://pcpartpicker.com/b/w38J7P" title="My PC Build In Depth"></LinkTile>
           </div>
         </div>
     </div>
