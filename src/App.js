@@ -1,70 +1,44 @@
 import "./App.css";
-import LinkTile from "./LinkTile";
+
+function LinkTile({link, title}) {
+  return (
+    <a
+      className="flex items-center justify-center text-center rounded-md border border-gray-900 shadow-lg overflow-hidden h-24 bg-slate-400 text-slate-800"
+      href={link}
+      target="_blank"
+    >
+      <div className="p-4">
+        <div className="text-sm">{title}</div>
+      </div>
+    </a>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="flex flex-col items-center space-y-4">
+    <div className="">
+        <div className="flex flex-col items-center space-y-4 pt-12">
           <div>
-            <img className="w-14 h-14 rounded-full" src="/avatar.jpeg"></img>
+            <img className="w-28 h-28 rounded-full" src="https://pbs.twimg.com/profile_images/1588707853275058176/vxVWhLC2_400x400.jpg"></img>
           </div>
-          <div>
-            <h1 className="font-bold text-2xl">John Jamison</h1>
-            <p className="text-center italic text-base mt-2">@iamjohnjamison</p>
-            <p className="mt-2 text-base">
+          <div className="text-black">
+            <h1 className="font-bold text-2xl ">John Jamison</h1>
+            <p className="text-center text-lg font-bold italic mt-2">@iamjohnjamison</p>
+            <p className="mt-2 text-base text-white">
               Software dev passionate about startups, business, software
             </p>
           </div>
           <div className="flex space-x-4 mt-4">
-            <img className="h-8 w-8" src="/tiktok-icon.png" />
-            <img className="h-8 w-8" src="/linkedin.png" />
-            <img className="h-8 w-8" src="/instagram.png" />
+            <a href="#" target="_blank"><img className="h-8 w-8" src="/tiktok-icon.png" /></a>
+            <a href="https://www.linkedin.com/in/johnwjamison/" target="_blank"><img className="h-8 w-8" src="/linkedin.png" /></a>
+            <a href="https://www.instagram.com/iamjohnjamison/" target="_blank"><img className="h-8 w-8" src="/instagram.png" /></a>
+            
           </div>
-          <div className="w-full space-y-4 mt-4 mx-auto">
-            <a
-              className="flex items-center justify-center text-center rounded-md border shadow-lg overflow-hidden h-24 bg-green-800"
-              href="https://pcpartpicker.com/b/w38J7P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="p-4">
-                <div class="text-md">My PC Build</div>
-              </div>
-            </a>
-            <a
-              className="flex items-center justify-center text-center rounded-md border shadow-lg overflow-hidden h-24 bg-green-500"
-              href="https://pcpartpicker.com/b/w38J7P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="p-4">
-                <div class="text-md">My PC Build</div>
-              </div>
-            </a>
-            <a
-              className="flex items-center justify-center text-center rounded-md border shadow-lg overflow-hidden h-24 bg-green-500"
-              href="https://pcpartpicker.com/b/w38J7P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="p-4">
-                <div class="text-md">My PC Build</div>
-              </div>
-            </a>
-            <a
-              className="flex items-center justify-center text-center rounded-md border shadow-lg overflow-hidden h-24 bg-green-500"
-              href="https://pcpartpicker.com/b/w38J7P"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="p-4">
-                <div class="text-md">My PC Build</div>
-              </div>
-            </a>
+          <div className="w-full space-y-4 mt-4 mx-auto px-2">
+            <LinkTile link="https://pcpartpicker.com/b/w38J7P" title="My PC Build In Depth"></LinkTile>
+
           </div>
         </div>
-      </header>
     </div>
   );
 }
